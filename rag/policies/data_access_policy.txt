@@ -1,0 +1,97 @@
+DATA ACCESS AND PRIVACY POLICY
+================================
+Effective Date: April 1, 2024
+Version: 2.0
+Classification: INTERNAL — RESTRICTED
+
+1. PURPOSE
+----------
+This policy defines the rules for accessing, storing, processing, and
+sharing data within the organization's ERP and ancillary systems, ensuring
+compliance with applicable data protection regulations (GDPR, CCPA, SOX).
+
+2. SCOPE
+--------
+Applies to all employees, contractors, and third-party service providers
+who access, process, or store organizational data in any form.
+
+3. DATA CLASSIFICATION
+-----------------------
+All data must be classified into one of the following tiers:
+
+  Tier    Label           Examples
+  ────    ─────           ────────
+  1       PUBLIC          Marketing materials, public financials
+  2       INTERNAL        Internal memos, org charts, policies
+  3       CONFIDENTIAL    Customer PII, employee records, contracts
+  4       RESTRICTED      Trade secrets, M&A data, encryption keys,
+                          authentication credentials
+
+3.1  Data owners (department heads) are responsible for classifying data
+     within their domain.
+3.2  Unclassified data defaults to CONFIDENTIAL until reviewed.
+
+4. ACCESS CONTROL PRINCIPLES
+------------------------------
+4.1  LEAST PRIVILEGE: Users receive only the minimum access required for
+     their job function.
+4.2  NEED-TO-KNOW: Access to CONFIDENTIAL and RESTRICTED data requires
+     documented business justification approved by the data owner.
+4.3  ROLE-BASED ACCESS: ERP access is granted via predefined roles; direct
+     permission assignments are prohibited except in break-glass scenarios.
+4.4  MULTI-FACTOR AUTHENTICATION (MFA): Required for all access to
+     RESTRICTED data and for remote ERP access.
+
+5. DATA HANDLING RULES
+-----------------------
+5.1  CONFIDENTIAL and RESTRICTED data must be encrypted at rest (AES-256)
+     and in transit (TLS 1.2+).
+5.2  Data must not be stored on personal devices, USB drives, or
+     unapproved cloud services.
+5.3  Screen-sharing or presenting RESTRICTED data requires pre-approval
+     from the data owner and IT Security.
+5.4  Printed CONFIDENTIAL/RESTRICTED documents must be collected
+     immediately and shredded after use.
+
+6. DATA RETENTION & DISPOSAL
+------------------------------
+6.1  Financial records: Retained for 7 years per SOX requirements.
+6.2  Employee records: Retained for 3 years after termination.
+6.3  Customer PII: Retained only for the duration of the business
+     relationship plus 2 years, unless legal hold applies.
+6.4  Data disposal must use approved methods: secure delete for digital
+     media, cross-cut shredding for physical documents.
+
+7. DATA BREACH RESPONSE
+-------------------------
+7.1  Any suspected breach must be reported to IT Security within 1 hour.
+7.2  IT Security initiates the Incident Response Plan (IRP) and notifies
+     the Data Protection Officer (DPO) within 4 hours.
+7.3  Regulatory notification (where required) within 72 hours per GDPR.
+7.4  Affected individuals notified within 5 business days if high risk.
+
+8. MONITORING & AUDIT
+-----------------------
+8.1  All access to CONFIDENTIAL and RESTRICTED data is logged with
+     user ID, timestamp, action, and data object identifier.
+8.2  Logs are retained for 2 years and reviewed monthly by IT Security.
+8.3  Quarterly access reviews conducted by data owners with IT Audit.
+
+9. THIRD-PARTY DATA SHARING
+-----------------------------
+9.1  Data Processing Agreements (DPAs) required for all third-party
+     processors handling CONFIDENTIAL or RESTRICTED data.
+9.2  Sub-processor changes require 30-day advance notice and approval.
+9.3  Cross-border transfers comply with Standard Contractual Clauses (SCCs)
+     or equivalent safeguards.
+
+10. CONSEQUENCES
+-----------------
+Violations may result in immediate access revocation, disciplinary action,
+and referral to legal authorities. Intentional unauthorized disclosure of
+RESTRICTED data is grounds for termination and potential criminal prosecution.
+
+11. REVIEW CYCLE
+-----------------
+Reviewed annually by IT Security, Legal, and the DPO.
+Next review: April 2025.

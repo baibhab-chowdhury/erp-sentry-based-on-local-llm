@@ -1,0 +1,26 @@
+user_id,full_name,email,department,role,hire_date,is_active
+USR-0001,Sarah Davis,joseph.jones@irmcloud.app,Accounts Receivable,AR Clerk,2022-12-24,True
+USR-0002,Pooja Wilson,robert.smith@irmcloud.app,Finance,Controller,2025-07-19,True
+USR-0003,Ananya Miller,vikram.wilson@trpglobal.uk,Finance,Finance Manager,2024-04-03,True
+USR-0004,James Banerjee,william.patel@enterprise-audit.local,Finance,CFO,2024-11-12,True
+USR-0005,Susan Banerjee,nancy.brown@irmcloud.app,Human Resources,HR Specialist,2024-08-22,True
+USR-0006,Daniel Martin,thomas.mukherjee@irmcloud.app,Accounts Receivable,AR Clerk,2022-09-06,True
+USR-0007,Matthew Williams,ananya.martinez@techriskpartners.com,Warehouse,Warehouse Supervisor,2023-07-15,True
+USR-0008,Robert Verma,joseph.banerjee@techriskpartners.com,Finance,Finance Manager,2026-04-29,True
+USR-0009,Matthew Rodriguez,sandra.sharma@techriskpartners.com,Finance,Finance Manager,2025-11-10,True
+USR-0010,Susan Verma,sarah.patel@irmcloud.app,IT Administration,IT Admin,2023-05-11,True
+USR-0011,William Anderson,matthew.rodriguez@trpglobal.uk,Procurement,Procurement Officer,2022-12-07,True
+USR-0012,Joseph Das,robert.mukherjee@techriskpartners.com,IT Administration,IT Admin,2024-07-10,True
+USR-0013,Susan Roy,rohan.gupta@techriskpartners.com,Human Resources,HR Specialist,2025-07-31,True
+USR-0014,Sandra Jones,thomas.jones@trpglobal.uk,Warehouse,Warehouse Supervisor,2022-08-06,True
+USR-0015,Pooja Wilson,pooja.gonzalez@techriskpartners.com,Finance,Controller,2025-07-17,True
+USR-0016,Jennifer Banerjee,patricia.sen@irmcloud.app,Procurement,Procurement Officer,2025-11-30,True
+USR-0017,Arjun Williams,matthew.gonzalez@enterprise-audit.local,Procurement,Procurement Officer,2023-10-22,True
+USR-0018,Linda Verma,vikram.banerjee@techriskpartners.com,Human Resources,HR Specialist,2022-06-18,True
+USR-0019,Charles Wilson,william.anderson@irmcloud.app,IT Administration,IT Admin,2022-09-22,True
+USR-0020,Amit Roy,michael.sen@techriskpartners.com,Human Resources,HR Specialist,2022-01-20,True
+USR-0021,Elizabeth Lopez,william.moore@irmcloud.app,Finance,Controller,2023-06-01,True
+USR-0022,Mary Brown,lisa.gupta@techriskpartners.com,IT Administration,IT Admin,2025-06-06,True
+USR-0023,Rohan Williams,jennifer.chatterjee@enterprise-audit.local,Accounts Payable,AP Clerk,2022-03-13,True
+USR-0024,David Verma,priya.moore@trpglobal.uk,Accounts Receivable,AR Clerk,2025-04-15,True
+USR-0025,Susan Roy,vikram.banerjee@trpglobal.uk,Finance,Controller,2022-10-10,True

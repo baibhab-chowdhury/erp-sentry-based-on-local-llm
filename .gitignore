@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# SQLite databases & temp files
+# Uncomment if you want fresh DB generation on clone:
+# data/*.db
+data/risk_report.json
+
+# Environment variables
+.env
+
+# Streamlit
+.streamlit/
+
+# OS specific
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store

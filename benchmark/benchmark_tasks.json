@@ -1,0 +1,64 @@
+{
+  "tasks": [
+    {
+      "id": "summarization_01",
+      "category": "summarization",
+      "prompt": "Summarize the following in 2-3 sentences:\n\nThe quarterly audit revealed several discrepancies in the accounts payable department. Three invoices totaling $47,500 were processed without proper purchase order matching. Additionally, two vendor payments were made to suppliers not yet approved in the vendor master file. The internal audit team recommends immediate remediation and enhanced automated controls for three-way matching before payment release. Management has agreed to implement the recommended controls by the end of Q2.",
+      "expected_keywords": ["audit", "invoices", "vendor", "controls", "remediation"]
+    },
+    {
+      "id": "summarization_02",
+      "category": "summarization",
+      "prompt": "Summarize in bullet points:\n\nOur ERP implementation project is currently in Phase 3 of 5. The finance module went live last month with minimal issues — only 12 support tickets in the first week, down from the projected 30. The supply chain module is scheduled for go-live in March, but the team has flagged potential integration challenges with the legacy warehouse management system. Training completion is at 78% across all departments. The project is currently $150K under budget but two weeks behind the original timeline due to additional customization requests from the procurement team.",
+      "expected_keywords": ["ERP", "phase", "finance", "supply chain", "budget", "training"]
+    },
+    {
+      "id": "classification_01",
+      "category": "classification",
+      "prompt": "Classify the following ERP transaction as either NORMAL or SUSPICIOUS, and explain why:\n\nTransaction ID: TXN-9921\nUser: John Smith (AP Clerk)\nType: PAYMENT\nAmount: $185,000\nTimestamp: 2024-03-17 02:30:00 (Sunday)\nVendor: NewVendor LLC (created 3 days ago)\nDescription: Urgent wire transfer — management verbal approval",
+      "expected_keywords": ["suspicious", "weekend", "high amount", "new vendor", "off-hours"]
+    },
+    {
+      "id": "classification_02",
+      "category": "classification",
+      "prompt": "Classify this access configuration as COMPLIANT or NON-COMPLIANT with Segregation of Duties:\n\nUser: Maria Garcia (Finance Department)\nRole: Controller\nPermissions assigned:\n- CREATE_JOURNAL_ENTRY\n- POST_JOURNAL_ENTRY\n- APPROVE_JOURNAL_ENTRY\n- RUN_FINANCIAL_REPORT\n\nExplain the SoD implications.",
+      "expected_keywords": ["non-compliant", "segregation", "journal entry", "create", "approve", "conflict"]
+    },
+    {
+      "id": "qa_01",
+      "category": "question_answering",
+      "prompt": "Based on standard ERP compliance practices, what are the key risks when the same person can both create a purchase order and approve the corresponding payment?",
+      "expected_keywords": ["fraud", "segregation", "duties", "authorization", "approval", "risk"]
+    },
+    {
+      "id": "qa_02",
+      "category": "question_answering",
+      "prompt": "What controls should be implemented in an ERP system to prevent unauthorized vendor creation and subsequent fraudulent payments?",
+      "expected_keywords": ["dual approval", "vendor master", "verification", "segregation", "monitoring"]
+    },
+    {
+      "id": "risk_assessment_01",
+      "category": "risk_assessment",
+      "prompt": "Perform a risk assessment on the following pattern:\n\nUser USR-0042 (Procurement Officer) has executed the following actions in the past 7 days:\n1. Created 3 new vendor records\n2. Generated purchase orders for all 3 vendors (totaling $95,000)\n3. Approved goods receipt for 2 of the 3 POs\n4. Submitted payment requests for the received goods\n\nAll actions were performed by the same individual. Assess the risk level (LOW/MEDIUM/HIGH/CRITICAL) and explain.",
+      "expected_keywords": ["critical", "segregation", "vendor", "purchase order", "payment", "single individual"]
+    },
+    {
+      "id": "risk_assessment_02",
+      "category": "risk_assessment",
+      "prompt": "Evaluate the risk of the following access pattern:\n\nIT Administrator account 'svc_admin' has been granted:\n- Full read/write access to all financial modules\n- User administration (create/modify/delete users)\n- Ability to modify audit logs\n- Direct database access\n\nThe account is shared among 4 IT staff members. Assess and recommend.",
+      "expected_keywords": ["high", "shared account", "audit log", "accountability", "privileged access", "individual accounts"]
+    },
+    {
+      "id": "email_draft_01",
+      "category": "email_drafting",
+      "prompt": "Draft a professional email to the CFO about the following:\n- Quarterly SoD review completed\n- Found 15 violations across 8 users\n- 3 are critical (same person creating and approving journal entries)\n- Recommended remediation: role reassignment for critical cases, compensating controls for medium cases\n- Need meeting to discuss timeline\n\nKeep it concise and professional.",
+      "expected_keywords": ["SoD", "violations", "remediation", "meeting", "critical"]
+    },
+    {
+      "id": "extraction_01",
+      "category": "data_extraction",
+      "prompt": "Extract structured information from this audit finding:\n\n\"During the Q3 access review, we identified that employee Robert Chen (employee ID: EMP-2847) in the Accounts Payable department holds conflicting SAP T-codes: FB60 (Enter Incoming Invoices) and F110 (Payment Run). This combination allows Mr. Chen to both enter vendor invoices and execute payment runs without independent approval. The finding was first identified on August 15, 2024, and remains open as of the review date September 30, 2024. Risk rating: High. Recommended action: Remove F110 access and reassign to AP Manager role.\"",
+      "expected_keywords": ["Robert Chen", "EMP-2847", "FB60", "F110", "High", "remove access"]
+    }
+  ]
+}

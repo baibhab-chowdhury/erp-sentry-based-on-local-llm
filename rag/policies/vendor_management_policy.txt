@@ -1,0 +1,79 @@
+VENDOR MANAGEMENT POLICY
+=========================
+Effective Date: February 1, 2024
+Version: 1.8
+Classification: INTERNAL
+
+1. PURPOSE
+----------
+This policy governs the end-to-end lifecycle of vendor relationships,
+including onboarding, due diligence, performance monitoring, and
+offboarding, to minimize supply chain risk and ensure regulatory compliance.
+
+2. SCOPE
+--------
+Applies to all new and existing vendors, suppliers, contractors, and
+service providers engaged by the organization.
+
+3. VENDOR ONBOARDING
+---------------------
+3.1  All new vendor requests must be submitted through the ERP Vendor
+     Master module by the requesting department.
+3.2  Required documentation:
+       • W-9 / W-8BEN (tax identification)
+       • Certificate of Insurance (liability min $1M)
+       • Bank account details (for ACH/wire setup)
+       • Signed Vendor Code of Conduct
+       • Compliance questionnaire (anti-bribery, data privacy)
+3.3  Vendor master record creation and bank detail entry must be performed
+     by DIFFERENT individuals (Segregation of Duties).
+3.4  Procurement must verify that the vendor is not on any sanctions or
+     debarment lists (OFAC, SAM.gov) before activation.
+3.5  Approval chain for new vendors:
+       Procurement Officer → Procurement Manager → Finance Director
+
+4. VENDOR DUE DILIGENCE
+-------------------------
+4.1  Tier 1 vendors (annual spend > $100K): Full due diligence annually,
+     including financial health check, compliance audit, and site visit.
+4.2  Tier 2 vendors ($10K – $100K): Desk review and compliance
+     questionnaire every 2 years.
+4.3  Tier 3 vendors (< $10K): Self-certification at onboarding; spot
+     checks as needed.
+
+5. PERFORMANCE MONITORING
+--------------------------
+5.1  Quarterly scorecard reviews for Tier 1 vendors covering:
+       • On-time delivery rate (target ≥ 95%)
+       • Quality defect rate (target ≤ 2%)
+       • Invoice accuracy (target ≥ 98%)
+       • Responsiveness (issue resolution within SLA)
+5.2  Vendors scoring below 70% for two consecutive quarters are placed
+     on probation and must present a corrective action plan within 30 days.
+
+6. VENDOR PAYMENT TERMS
+-------------------------
+6.1  Standard payment terms: Net 30 days from invoice receipt.
+6.2  Early payment discounts (2/10 Net 30) may be negotiated by
+     Procurement with Finance approval.
+6.3  No advance payments without CFO and Legal approval.
+6.4  Payments to vendors created within the last 90 days require
+     additional review by AP Manager.
+
+7. VENDOR OFFBOARDING
+----------------------
+7.1  Termination requires 30-day written notice unless contract specifies
+     otherwise.
+7.2  IT must revoke all system access within 24 hours of termination.
+7.3  Outstanding invoices must be settled within 60 days of offboarding.
+
+8. CONFLICTS OF INTEREST
+--------------------------
+8.1  Employees must disclose any personal or financial relationship with
+     a vendor or prospective vendor to the Compliance Officer.
+8.2  Employees with disclosed conflicts are recused from vendor evaluation
+     and approval decisions involving that vendor.
+
+9. REVIEW CYCLE
+----------------
+Reviewed annually. Next review: February 2025.

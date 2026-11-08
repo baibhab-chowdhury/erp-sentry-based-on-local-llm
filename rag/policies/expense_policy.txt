@@ -1,0 +1,66 @@
+EXPENSE APPROVAL POLICY
+========================
+Effective Date: March 15, 2024
+Version: 2.1
+Classification: INTERNAL
+
+1. PURPOSE
+----------
+This policy defines the approval hierarchy and spending limits for all
+business expenses, ensuring proper authorization and fiscal responsibility.
+
+2. SCOPE
+--------
+Applies to all employees submitting expense reports, purchase requisitions,
+or procurement requests through the ERP system.
+
+3. APPROVAL THRESHOLDS
+-----------------------
+The following approval matrix applies to ALL expense categories:
+
+  Amount Range (USD)       Required Approver(s)
+  ─────────────────────    ──────────────────────────────────────
+  ≤ $500                   Direct Supervisor
+  $501 – $5,000            Department Manager
+  $5,001 – $25,000         Department Manager + Finance Director
+  $25,001 – $50,000        VP of Finance + CFO
+  > $50,000                CFO + Board Approval
+
+3.1  No expense may be self-approved regardless of the requester's seniority.
+3.2  Split transactions intended to circumvent thresholds are strictly
+     prohibited and subject to disciplinary action.
+
+4. EXPENSE CATEGORIES
+----------------------
+4.1  TRAVEL: Must be pre-approved. Airfare economy class unless flight > 6 h.
+     Hotel per-diem rates per company travel schedule. Meals capped at $75/day
+     domestic, $100/day international.
+4.2  OFFICE SUPPLIES: Standard items via approved vendor catalog only.
+     Non-catalog items need manager approval.
+4.3  SOFTWARE / IT: All software purchases must be vetted by IT Security for
+     compliance and licensing.
+4.4  CONSULTING / PROFESSIONAL SERVICES: Requires Statement of Work (SOW)
+     signed by the department head and Legal review if > $10,000.
+4.5  CAPITAL EXPENDITURES: Follow the CapEx policy; require Finance Director
+     sign-off and budget confirmation.
+
+5. SUBMISSION DEADLINES
+------------------------
+5.1  Expense reports must be submitted within 30 days of the expense date.
+5.2  Reports older than 60 days require VP-level exception approval.
+5.3  Fiscal year-end expenses must be submitted by December 20.
+
+6. RECEIPT REQUIREMENTS
+------------------------
+6.1  Original receipts (or clear digital scans) required for all items > $25.
+6.2  Missing receipts require a signed Missing Receipt Affidavit approved
+     by the department manager.
+
+7. AUDIT & COMPLIANCE
+----------------------
+7.1  Finance will audit 10% of submitted expense reports monthly.
+7.2  Flagged violations are reported to the employee's VP and HR.
+
+8. REVIEW CYCLE
+----------------
+Reviewed semi-annually. Next review: September 2024.

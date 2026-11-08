@@ -1,0 +1,60 @@
+SEGREGATION OF DUTIES (SoD) POLICY
+====================================
+Effective Date: January 1, 2024
+Version: 3.2
+Classification: INTERNAL — CONFIDENTIAL
+
+1. PURPOSE
+----------
+This policy establishes the Segregation of Duties framework to prevent fraud,
+errors, and unauthorized activities in Enterprise Resource Planning (ERP)
+systems. SoD ensures that no single individual can control all phases of a
+critical business transaction without independent oversight.
+
+2. SCOPE
+--------
+This policy applies to all employees, contractors, and third-party users who
+have access to the organization's ERP system (SAP, Oracle, or equivalent).
+
+3. CORE PRINCIPLES
+-------------------
+3.1  No single person shall have the authority to both initiate AND approve
+     the same financial transaction.
+3.2  The following function pairs are considered conflicting and must NEVER
+     be assigned to the same user:
+       • Create Purchase Order  ↔  Approve Payment
+       • Create Vendor Record   ↔  Process Invoice for that Vendor
+       • Create Journal Entry   ↔  Post / Approve Journal Entry
+       • Receive Goods          ↔  Approve Payment for those Goods
+       • Manage User Access     ↔  Approve Financial Transactions
+3.3  Emergency / break-glass access that temporarily combines conflicting
+     duties must be logged, time-limited (max 24 hours), and reviewed by
+     Internal Audit within 48 hours.
+
+4. ROLE-BASED ACCESS CONTROL (RBAC)
+-------------------------------------
+4.1  Access to ERP transactions (T-codes) shall be granted strictly based on
+     the employee's job function.
+4.2  Role assignments must be reviewed quarterly by department managers and
+     Internal Audit.
+4.3  Any role change request must be approved by both the employee's manager
+     AND the IT Security team.
+
+5. MONITORING & DETECTION
+--------------------------
+5.1  Automated SoD conflict detection tools shall run daily against the
+     access control matrix.
+5.2  Detected violations must be reported to the Compliance Officer within
+     24 hours.
+5.3  Unresolved violations older than 30 days are escalated to the CFO.
+
+6. CONSEQUENCES
+----------------
+Violation of this policy may result in disciplinary action up to and
+including termination, and may be referred to legal authorities if fraud
+is suspected.
+
+7. REVIEW CYCLE
+----------------
+This policy is reviewed annually by Internal Audit and the Chief Compliance
+Officer. The next scheduled review is January 2025.
