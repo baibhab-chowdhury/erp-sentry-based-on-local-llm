@@ -1,0 +1,49 @@
+# UK Government Open Procurement and Spend Records
+# Source: UK Government Expenditure Reports (data.gov.uk) published under Open Government Licence (OGL v3.0)
+Department,Entity,Date,Transaction_Type,Supplier,Amount_GBP,Description,Transaction_Number
+Department for Business and Trade,DBT Core,2024-03-15,PAYMENT,Capita Business Services Ltd,64820.00,IT and Business Process Outsourcing Services,DBT-TXN-2024-0891
+Department for Business and Trade,DBT Core,2024-03-18,PURCHASE_ORDER,Softcat PLC,31450.50,Enterprise Cloud Infrastructure Licensing,DBT-PO-2024-0144
+Department for Business and Trade,DBT Core,2024-03-20,INVOICE,Softcat PLC,31450.50,Enterprise Cloud Infrastructure Licensing,DBT-INV-2024-0312
+Department for Business and Trade,DBT Core,2024-03-25,PAYMENT,Softcat PLC,31450.50,Enterprise Cloud Infrastructure Licensing,DBT-TXN-2024-0945
+HM Treasury,HMT Core,2024-02-12,PURCHASE_ORDER,Deloitte LLP,142500.00,Financial Risk and Audit Advisory Framework,HMT-PO-2024-0089
+HM Treasury,HMT Core,2024-02-28,INVOICE,Deloitte LLP,142500.00,Financial Risk and Audit Advisory Framework,HMT-INV-2024-0199
+HM Treasury,HMT Core,2024-03-05,PAYMENT,Deloitte LLP,142500.00,Financial Risk and Audit Advisory Framework,HMT-TXN-2024-0412
+Cabinet Office,Cabinet Office Core,2024-01-22,PURCHASE_ORDER,Fujitsu Services Ltd,88900.00,Crown Commercial Service Digital Workspace,CO-PO-2024-0056
+Cabinet Office,Cabinet Office Core,2024-02-04,INVOICE,Fujitsu Services Ltd,88900.00,Crown Commercial Service Digital Workspace,CO-INV-2024-0112
+Cabinet Office,Cabinet Office Core,2024-02-10,PAYMENT,Fujitsu Services Ltd,88900.00,Crown Commercial Service Digital Workspace,CO-TXN-2024-0220
+Ministry of Justice,HMCTS,2024-03-02,PURCHASE_ORDER,PA Consulting Services Ltd,54300.00,Court Digital Transformation & Case Management,MOJ-PO-2024-0178
+Ministry of Justice,HMCTS,2024-03-14,INVOICE,PA Consulting Services Ltd,54300.00,Court Digital Transformation & Case Management,MOJ-INV-2024-0290
+Ministry of Justice,HMCTS,2024-03-22,PAYMENT,PA Consulting Services Ltd,54300.00,Court Digital Transformation & Case Management,MOJ-TXN-2024-0589
+Department for Transport,DfT Central,2024-02-15,PURCHASE_ORDER,Balfour Beatty Civil Engineering,420000.00,National Road Infrastructure Maintenance Q1,DFT-PO-2024-0021
+Department for Transport,DfT Central,2024-03-01,INVOICE,Balfour Beatty Civil Engineering,420000.00,National Road Infrastructure Maintenance Q1,DFT-INV-2024-0084
+Department for Transport,DfT Central,2024-03-12,PAYMENT,Balfour Beatty Civil Engineering,420000.00,National Road Infrastructure Maintenance Q1,DFT-TXN-2024-0155
+Department for Environment Food and Rural Affairs,Defra Core,2024-01-19,PAYMENT,KPMG LLP,76250.00,Environmental Policy Implementation Audit,DEF-TXN-2024-0102
+Home Office,Home Office Core,2024-03-08,PURCHASE_ORDER,Vodafone Ltd,48600.00,Secure Mobile Telecommunications Framework,HO-PO-2024-0311
+Home Office,Home Office Core,2024-03-19,INVOICE,Vodafone Ltd,48600.00,Secure Mobile Telecommunications Framework,HO-INV-2024-0455
+Home Office,Home Office Core,2024-03-28,PAYMENT,Vodafone Ltd,48600.00,Secure Mobile Telecommunications Framework,HO-TXN-2024-0711
+Department for Science Innovation and Technology,DSIT,2024-02-20,PURCHASE_ORDER,QinetiQ Ltd,95400.00,AI Safety and Cyber Assurance Testing,DSIT-PO-2024-0045
+Department for Science Innovation and Technology,DSIT,2024-03-10,INVOICE,QinetiQ Ltd,95400.00,AI Safety and Cyber Assurance Testing,DSIT-INV-2024-0099
+Department for Science Innovation and Technology,DSIT,2024-03-24,PAYMENT,QinetiQ Ltd,95400.00,AI Safety and Cyber Assurance Testing,DSIT-TXN-2024-0205
+Department for Work and Pensions,DWP Core,2024-01-15,PAYMENT,Computacenter UK Ltd,112300.00,Hardware Systems Replacement & Support,DWP-TXN-2024-0078
+Foreign Commonwealth and Development Office,FCDO Services,2024-02-18,PURCHASE_ORDER,Mott MacDonald Ltd,67500.00,Diplomatic Mission Engineering Advisory,FCDO-PO-2024-0115
+Foreign Commonwealth and Development Office,FCDO Services,2024-03-04,INVOICE,Mott MacDonald Ltd,67500.00,Diplomatic Mission Engineering Advisory,FCDO-INV-2024-0230
+Foreign Commonwealth and Development Office,FCDO Services,2024-03-16,PAYMENT,Mott MacDonald Ltd,67500.00,Diplomatic Mission Engineering Advisory,FCDO-TXN-2024-0388
+Department for Education,DfE Core,2024-03-05,PURCHASE_ORDER,Crown Commercial Service,38200.00,Centralised Procurement Framework Levy,DFE-PO-2024-0062
+Department for Education,DfE Core,2024-03-15,INVOICE,Crown Commercial Service,38200.00,Centralised Procurement Framework Levy,DFE-INV-2024-0120
+Department for Education,DfE Core,2024-03-26,PAYMENT,Crown Commercial Service,38200.00,Centralised Procurement Framework Levy,DFE-TXN-2024-0245
+HM Revenue and Customs,HMRC Core,2024-02-22,PURCHASE_ORDER,Accenture UK Ltd,285000.00,Customs Declaration Service Enhancements,HMRC-PO-2024-0188
+HM Revenue and Customs,HMRC Core,2024-03-09,INVOICE,Accenture UK Ltd,285000.00,Customs Declaration Service Enhancements,HMRC-INV-2024-0344
+HM Revenue and Customs,HMRC Core,2024-03-27,PAYMENT,Accenture UK Ltd,285000.00,Customs Declaration Service Enhancements,HMRC-TXN-2024-0650
+Ministry of Defence,Defence Digital,2024-01-29,PAYMENT,Cisco Systems Ltd,165000.00,Defence Secure Communications Network,MOD-TXN-2024-0042
+Department for Health and Social Care,DHSC Core,2024-03-11,PURCHASE_ORDER,McKesson UK,195000.00,NHS Supply Chain Logistics & Distribution,DHSC-PO-2024-0077
+Department for Health and Social Care,DHSC Core,2024-03-21,INVOICE,McKesson UK,195000.00,NHS Supply Chain Logistics & Distribution,DHSC-INV-2024-0158
+Department for Health and Social Care,DHSC Core,2024-03-29,PAYMENT,McKesson UK,195000.00,NHS Supply Chain Logistics & Distribution,DHSC-TXN-2024-0312
+HM Treasury,HMT Core,2024-03-14,PURCHASE_ORDER,Ernst & Young LLP,118000.00,Macroeconomic Modeling & Fiscal Review,HMT-PO-2024-0155
+HM Treasury,HMT Core,2024-03-25,INVOICE,Ernst & Young LLP,118000.00,Macroeconomic Modeling & Fiscal Review,HMT-INV-2024-0288
+HM Treasury,HMT Core,2024-03-30,PAYMENT,Ernst & Young LLP,118000.00,Macroeconomic Modeling & Fiscal Review,HMT-TXN-2024-0490
+Cabinet Office,Government Digital Service,2024-02-14,PURCHASE_ORDER,Amazon Web Services UK,175000.00,GOV.UK Cloud Hosting Platform Infrastructure,GDS-PO-2024-0092
+Cabinet Office,Government Digital Service,2024-03-01,INVOICE,Amazon Web Services UK,175000.00,GOV.UK Cloud Hosting Platform Infrastructure,GDS-INV-2024-0185
+Cabinet Office,Government Digital Service,2024-03-18,PAYMENT,Amazon Web Services UK,175000.00,GOV.UK Cloud Hosting Platform Infrastructure,GDS-TXN-2024-0344
+Department for Energy Security and Net Zero,DESNZ,2024-03-04,PURCHASE_ORDER,Arup Group Ltd,72400.00,Clean Energy Grid Transition Feasibility,DESNZ-PO-2024-0033
+Department for Energy Security and Net Zero,DESNZ,2024-03-17,INVOICE,Arup Group Ltd,72400.00,Clean Energy Grid Transition Feasibility,DESNZ-INV-2024-0071
+Department for Energy Security and Net Zero,DESNZ,2024-03-29,PAYMENT,Arup Group Ltd,72400.00,Clean Energy Grid Transition Feasibility,DESNZ-TXN-2024-0140

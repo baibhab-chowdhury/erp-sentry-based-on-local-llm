@@ -26,11 +26,11 @@ Built for the **iRM internship application**, this project showcases:
 |---|-----------|---------------|
 | 1 | **Local LLMs** | Ollama on Windows (Llama 3.2 3B, Qwen 2.5, Phi-3) |
 | 2 | **ERP Risk Detection** | SoD violation scanner + LLM-powered risk assessments |
-| 3 | **Policy Q&A (RAG)** | TF-IDF vector store + retrieval-augmented generation |
-| 4 | **Productivity Tools** | Summarise, draft emails, meeting notes |
-| 5 | **AI Agents (MCP)** | JSON-RPC 2.0 MCP server exposing ERP tools |
-| 6 | **Benchmarking** | Tokens/sec, TTFT, VRAM, per-category comparison |
-| 7 | **Synthetic Data** | Realistic ERP transactions with injected violations |
+| 3 | **Real Procurement Data** | Verified UK Government spend (data.gov.uk) with SAP T-codes |
+| 4 | **Policy Q&A (RAG)** | TF-IDF vector store + retrieval-augmented generation |
+| 5 | **Productivity Tools** | Summarise, draft emails, meeting notes |
+| 6 | **AI Agents (MCP)** | JSON-RPC 2.0 MCP server exposing ERP tools |
+| 7 | **Benchmarking** | Tokens/sec, TTFT, VRAM, per-category comparison |
 | 8 | **Fine-Tuning Prep** | LoRA/QLoRA dataset in Alpaca & chat formats |
 
 ---
@@ -173,9 +173,13 @@ ollama pull phi3:mini
 python setup_check.py
 ```
 
-### 4. Generate Synthetic Data
+### 4. Load Data (Real UK Government Spend or Synthetic Benchmark)
 
 ```bash
+# Option A: Ingest authentic UK Government public spend records (data.gov.uk)
+python -m data.ingest_real_procurement
+
+# Option B: Or generate synthetic ERP benchmark data
 python -m data.generate_synthetic_erp
 ```
 

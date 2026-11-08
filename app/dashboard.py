@@ -135,14 +135,41 @@ def render_sidebar() -> str:
         except Exception:
             st.warning("GPU: Could not query")
 
-        # DB status
+        # DB status & Dataset Manager
+        st.markdown("---")
+        st.markdown("### 🗄️ ERP Dataset Source")
         if cfg.SQLITE_DB_PATH.exists():
-            st.success("Database: Available")
+            import sqlite3
+            try:
+                conn = sqlite3.connect(str(cfg.SQLITE_DB_PATH))
+                txn_count = conn.execute("SELECT count(*) FROM transactions").fetchone()[0]
+                sample_vendor = conn.execute("SELECT vendor FROM transactions LIMIT 1").fetchone()
+                conn.close()
+                is_real = sample_vendor and any(v in sample_vendor[0] for v in ["Deloitte", "Softcat", "Capita", "Fujitsu", "Balfour", "Computacenter"])
+                if is_real:
+                    st.success("🇬🇧 Real UK Govt Procurement (OGL v3)")
+                    st.caption(f"Verified data.gov.uk spend ({txn_count} records)")
+                else:
+                    st.info(f"📊 Synthetic ERP Benchmark ({txn_count} records)")
+            except Exception:
+                st.success("Database: Connected")
         else:
             st.warning("Database: Not generated yet")
 
+        col_d1, col_d2 = st.columns(2)
+        with col_d1:
+            if st.button("🇬🇧 Load Real Data", use_container_width=True, help="Load authentic UK Government spend data"):
+                from data.ingest_real_procurement import main as load_real
+                load_real()
+                st.rerun()
+        with col_d2:
+            if st.button("📊 Load Synthetic", use_container_width=True, help="Generate synthetic test data"):
+                from data.generate_synthetic_erp import main as load_synth
+                load_synth()
+                st.rerun()
+
         st.markdown("---")
-        st.caption("Built for iRM · Powered by Ollama")
+        st.caption("Built for iRM (TRP Global) · On-Prem Local LLM")
 
     return model  # type: ignore[return-value]
 

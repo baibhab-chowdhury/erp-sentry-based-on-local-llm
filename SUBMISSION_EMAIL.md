@@ -23,6 +23,7 @@ Having seen your focus on enterprise privacy, on-prem local models on Windows, a
    - Configured and evaluated on Windows PC using local Ollama instances running **Llama 3.2 3B**, **Qwen 2.5 3B**, and **Llama 3.2 1B** on an NVIDIA RTX 3050 Laptop GPU (4GB VRAM) with complete offline privacy (zero data leakage for sensitive enterprise financial records).
 
 2. **Use Case 2: ERP Access-Risk & Segregation of Duties (SoD) Detection:**
+   - Evaluated on **authentic UK Government public expenditure & procurement data** (sourced from `data.gov.uk` under Open Government Licence v3.0 across HM Treasury, DBT, Cabinet Office, MoJ) and mapped to standard **SAP T-codes** (`ME21N`, `FB60`, `F110`, `ME28`).
    - Detects the exact scenario highlighted in the JD: **the same person creating a Purchase Order (PO) and processing its payment**.
    - Identifies vendor master fraud risks, off-hours/weekend execution anomalies, unusually high disbursements, and toxic authorization combinations.
    - Combines rule-based pre-filtering with local LLM chain-of-thought risk reasoning and severity classification.

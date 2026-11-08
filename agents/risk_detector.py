@@ -109,9 +109,12 @@ def detect_sod_conflicts(
         user_perms[ar["user_id"]].add(ar["permission"])
 
     findings: list[RiskFinding] = []
+    def _has_perm(needle: str, user_perm_set: set[str]) -> bool:
+        return any(needle in p for p in user_perm_set)
+
     for uid, perms in user_perms.items():
         for perm_a, perm_b in cfg.SOD_CONFLICT_PAIRS:
-            if perm_a in perms and perm_b in perms:
+            if _has_perm(perm_a, perms) and _has_perm(perm_b, perms):
                 findings.append(
                     RiskFinding(
                         finding_id=_next_id(),
