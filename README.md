@@ -1,20 +1,3 @@
-<p align="center">
-  <img src="https://img.shields.io/badge/ERP--Sentry-v1.0-1B3A5C?style=for-the-badge&logo=shield&logoColor=white" alt="ERP-Sentry">
-  <img src="https://img.shields.io/badge/Ollama-Local%20LLM-E8792F?style=for-the-badge&logo=llama&logoColor=white" alt="Ollama">
-  <img src="https://img.shields.io/badge/Model%20Context%20Protocol-MCP%20Server-6C63FF?style=for-the-badge" alt="MCP">
-  <img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/NVIDIA%20GPU-RTX%203050-76B900?style=for-the-badge&logo=nvidia&logoColor=white" alt="GPU">
-  <img src="https://img.shields.io/badge/Data-UK%20Gov%20Open%20Procurement-005EA5?style=for-the-badge" alt="UK Gov Data">
-</p>
-
-<h1 align="center">🛡️ ERP-Sentry</h1>
-<p align="center">
-  <strong>On-Premises Local LLM Agent & MCP Server for Enterprise ERP Access-Risk & Segregation of Duties (SoD) Governance</strong><br>
-  <em>100 % Private · 100 % Offline · Zero Cloud Data Leakage</em><br>
-  Built specifically for the <strong>iRM (A TRP Global company)</strong> Paid AI/LLM Internship.
-</p>
-
----
 
 ## 📖 Table of Contents
 1. [What is ERP-Sentry?](#-what-is-erp-sentry)
@@ -25,10 +8,9 @@
 6. [Prerequisites & Hardware Requirements](#-prerequisites--hardware-requirements)
 7. [Step-by-Step Setup Guide](#-step-by-step-setup-guide)
 8. [Running the Application (Interactive UI & CLI)](#-running-the-application)
-9. [How to Demo This Project in an Interview](#-how-to-demo-this-project-in-an-interview)
-10. [Hardware Benchmark Results](#-hardware-benchmark-results)
-11. [Fine-Tuning Pipeline (LoRA / QLoRA)](#-fine-tuning-pipeline-lora--qlora)
-12. [Security & Compliance Alignment](#-security--compliance-alignment)
+9. [Hardware Benchmark Results](#-hardware-benchmark-results)
+10. [Fine-Tuning Pipeline (LoRA / QLoRA)](#-fine-tuning-pipeline-lora--qlora)
+11. [Security & Compliance Alignment](#-security--compliance-alignment)
 
 ---
 
@@ -76,7 +58,7 @@ ERP-Sentry operates as an end-to-end multi-tier pipeline:
 └────────────────────────────────────────────────────────────────────────┘
 ```
 
-1. **Transaction Ingestion:** Real UK public procurement data (or synthetic benchmark data) is loaded into SQLite.
+1. **Transaction Ingestion:** Real UK public procurement data is loaded into SQLite.
 2. **Access Control Analysis:** The system inspects user entitlements and transaction sequences for toxic authorization overlaps (`CREATE_PURCHASE_ORDER` + `APPROVE_PAYMENT`).
 3. **Local LLM Audit Enrichment:** For every flagged anomaly, the local LLM generates an auditor-grade compliance summary explaining the financial risk and recommending mitigation steps.
 4. **Policy Grounding (RAG):** When questions are asked, the vector engine retrieves specific clauses from corporate policy documents (e.g. Delegated Authority limits) to ground answers with citations.
@@ -168,7 +150,6 @@ local_llm/
 ├── requirements.txt                # Python package dependencies
 ├── run_dashboard.bat               # 1-click Windows launcher for Streamlit Dashboard
 ├── run_mcp_client.bat              # 1-click Windows launcher for MCP test client
-├── SUBMISSION_EMAIL.md             # Formal cover email for HR.SUPPORT@trpglobal.uk
 ├── README.md                       # Comprehensive documentation
 │
 ├── data/                           # ERP Data Layer
@@ -268,7 +249,7 @@ Download and run the local models. In your terminal:
 ollama serve
 
 # In a new terminal, pull the recommended models:
-ollama pull llama3.2:3b    # Fast, generalist 3B model (sweet spot for 4GB VRAM)
+ollama pull llama3.2:3b    # Fast, generalist 3B model 
 ollama pull qwen2.5:3b     # High-precision reasoning model
 ollama pull llama3.2:1b    # (Optional) Ultra-fast triage model (75+ tok/s)
 ```
@@ -336,63 +317,6 @@ Measure speed and resource utilization on your machine:
 ```powershell
 python -m benchmark.run_benchmark
 ```
-
----
-
-## 🎤 How to Demo This Project in an Interview
-
-The job description explicitly notes:  
-> *"Interview note: you will be asked to demo a local LLM running on your own Windows PC."*
-
-Follow this 5-minute live demonstration script to impress the iRM interviewers:
-
-```
-Step 1: Show Local Architecture
-├── Open terminal and run `ollama list` to show models running on local hardware.
-└── Run `nvidia-smi` to prove inference is utilizing your local GPU (e.g. RTX 3050).
-
-Step 2: Launch Web Dashboard
-├── Run `python -m streamlit run app/dashboard.py`.
-└── Point out the sidebar showing:
-    • Real UK Government Procurement Data active (data.gov.uk)
-    • VRAM utilization meter
-    • Selected local model (Llama 3.2 3B)
-
-Step 3: Run the ERP Access-Risk Scanner (Use Case 2)
-├── Click "🚀 Run Risk Scan".
-├── Show the detected CRITICAL finding:
-│   "User holds conflicting permissions: 'CREATE_PURCHASE_ORDER (SAP:ME21N)'
-│    and 'APPROVE_PAYMENT (SAP:F110)'."
-└── Expand the LLM Risk Assessment to highlight the model's natural-language
-    explanation of the fraud risk and suggested mitigation.
-
-Step 4: Demonstrate RAG Policy Search
-├── Switch to Tab 2 ("Policy Q&A").
-├── Ask: "What are the approval thresholds for expenses over £50,000?"
-└── Show how the response directly quotes and cites `expense_policy.txt`.
-
-Step 5: Demonstrate the MCP Server
-├── Open PowerShell and run `python agents/mcp_client.py`.
-└── Explain: "Here is the Model Context Protocol server exposing ERP tools
-    via JSON-RPC 2.0 so autonomous agents can query transactional data securely."
-```
-
----
-
-## 📊 Hardware Benchmark Results
-
-Evaluated on: **Windows 11, Intel Core i7 / AMD Ryzen (8 cores), 16GB RAM, NVIDIA GeForce RTX 3050 Laptop GPU (4GB VRAM)** via Ollama.
-
-| Model | Parameters | Avg Speed | Time to First Token (TTFT) | Avg Latency | Peak VRAM | VRAM Headroom | Audit Reasoning Quality |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **Llama 3.2 3B** *(Default)* | 3.2B | **42.6 tok/s** | **0.29 s** | **2.97 s** | **2.54 GB** | **~1.5 GB free** | **Excellent (9.2 / 10)** |
-| **Qwen 2.5 3B** | 3.0B | **37.9 tok/s** | **0.37 s** | **3.67 s** | **2.77 GB** | **~1.3 GB free** | **Superior Precision (9.5 / 10)** |
-| **Llama 3.2 1B** | 1.2B | **77.2 tok/s** | **0.18 s** | **1.71 s** | **1.35 GB** | **~2.7 GB free** | **Good (7.6 / 10)** |
-| **Phi-3 Mini** | 3.8B | **33.7 tok/s** | **0.45 s** | **4.16 s** | **3.20 GB** | **~0.8 GB free** | **Very High (9.0 / 10)** |
-
-### Architectural Recommendation
-* **Tier 1 (Triage & Filtering):** **Llama 3.2 1B** running at **77+ tok/s** for sub-second preliminary screening of high-volume transaction feeds.
-* **Tier 2 (Deep Audit Reasoning & Memos):** **Llama 3.2 3B** or **Qwen 2.5 3B** for comprehensive regulatory justification and MCP agent tool execution.
 
 ---
 
