@@ -343,7 +343,4 @@ python -m finetuning.prepare_dataset
 
 ---
 
-<p align="center">
-  <strong>ERP-Sentry — Built for iRM (A TRP Global company)</strong><br>
-  <em>Demonstrating enterprise-ready local AI for access-risk governance</em>
-</p>
+
