@@ -331,7 +331,7 @@ python -m finetuning.prepare_dataset
   * `finetuning/train_chat.jsonl` (ShareGPT/ChatML format)
   * Train / Validation 90:10 splits
 * **Sample Content:** Real UK Government transactions and SAP T-codes paired with expert audit reasoning.
-* **Training Guide:** See [`finetuning/finetune_guide.md`](finetuning/finetune_guide.md) for full PyTorch, Hugging Face `transformers`, `peft`, and Unsloth training scripts optimized for 4GB–8GB GPUs.
+
 
 ---
 
